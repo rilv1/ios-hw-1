@@ -16,13 +16,41 @@ import UIKit
  1.5) استعمل if statement , اذا كانت المصفوفة تحتوي على بيتزا قم بطباعه "yumm Pizza🍕😋"
 
 */
+var array = ["burger" , "nice" , "shawerma"]
 
+ array.append("pizza")
 
+print(array[0])
 
+for i in array {
+    
+    print(i)
 
+if i == "pizza" {
+          print("yumm pizza")
+      }
+
+  
+}
 
 //: # 2️⃣  السؤال الثاني
 var numbers = [1,2,3,4,5,6,7,8,9,10]
+
+var evenNumbers : [Int] = []
+
+for N in numbers {
+    
+    
+  
+    if N % 2 == 0 {
+        evenNumbers.append(N)
+    }
+    
+}
+
+print(evenNumbers)
+
+
 /*:
 
 ##
@@ -56,4 +84,13 @@ var numbers = [1,2,3,4,5,6,7,8,9,10]
 
  
  */
-   
+for i in 1...5{
+    
+    for n in 1...10 {
+        
+        print("\(i) x \(n) = \(i*n)")
+
+
+    }
+    
+}
